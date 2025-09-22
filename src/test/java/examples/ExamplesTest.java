@@ -17,6 +17,7 @@ class ExamplesTest {
 
         Results results = Runner.path("classpath:examples")
                 .outputCucumberJson(true)
+                .outputHtmlReport(false)
                 .parallel(5);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
