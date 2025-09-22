@@ -15,6 +15,7 @@ Feature: sample karate test script322332332323
     When method get
     Then status 200
 
+  @Smoke
   Scenario: create a user and then get it by id
     * def user =
       """
