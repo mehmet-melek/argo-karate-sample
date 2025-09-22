@@ -12,7 +12,7 @@ class ExamplesTest {
 
         //set output directory
 
-        System.setProperty("karate.output.dir", "target/test-reports");
+        System.setProperty("karate.output.dir", "target/test-report");
 
 
         Results results = Runner.path("classpath:examples")
