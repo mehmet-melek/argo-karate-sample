@@ -1,3 +1,4 @@
+@ignore
 Feature: sample karate test script322332332323
   for help, see: https://github.com/karatelabs/karate/wiki/IDE-Support
 

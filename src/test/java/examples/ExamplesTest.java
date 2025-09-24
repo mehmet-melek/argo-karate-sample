@@ -12,11 +12,12 @@ class ExamplesTest {
 
         //set output directory
 
-        System.setProperty("karate.output.dir", "target/argo");
+        System.setProperty("karate.output.dir", "target/test-report");
 
 
         Results results = Runner.path("classpath:examples")
                 .outputCucumberJson(true)
+                .outputHtmlReport(false)
                 .parallel(5);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
